@@ -1,5 +1,7 @@
 # googlecloudSDK-app-engine-python
 # Deployment on Google Cloud App Engine
+## Live URL
+https://assignmentcc1.el.r.appspot.com
 
 This repository documents the step-by-step process of deploying a Python (Flask) application
 to Google Cloud App Engine using Google Cloud SDK.
@@ -24,6 +26,15 @@ to Google Cloud App Engine using Google Cloud SDK.
 7. Fixed IAM permissions for App Engine service account
 8. Deployed
 
-## Live URL
-https://assignmentcc1.el.r.appspot.com
+## Common Errors & Fixes
+
+### Billing Not Enabled
+App Engine requires billing even for free-tier usage.
+
+### Runtime Error
+`python39` is no longer supported. Updated to `python311`.
+
+### Cloud Build Permission Error
+Fixed by granting Storage Admin and Cloud Build roles
+
    
